@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario sobre Arte</title>
+</head>
+
+<body>
+
+    <section>
+        <nav class="navbar">
+            <div class="logo" id="loguito">
+                <img src="img/pngwing.com.png" width="80" height="70" alt="Loguito" />
+            </div>
+
+            <div>
+                <ul class="nav-links" id="paginas">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="formulario.html">¿Cuánto sabes de arte?</a></li>
+                </ul> 
+            </div>
+        </nav>
+    </section>
+
+    <div>
+        <h1>¿Cuánto conoces de arte?</h1>
+        <p class="subtitulo">Completar todos los campos solicitados</p>
+        
+        <form action="#" method="POST" id="ejercicioForm">
+
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div class="control-group">
+                    <label for="nombre">Nombre y apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre - Apellido" required>
+                </div>
+
+                <div class="control-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento *</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>                
+                
+                <div class="control-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Historia del Arte</legend>
+
+                <div class="control-group">
+                    <label-1 for="curso">¿En qué período histórico la humanidad comenzó a hacer dibujos?</label-1>
+                    <img src="img/dibujos.jfif" alt="dibujos" width="500px" height="300px">
+                    <select id="curso" name="curso" required>
+                        <option value="opcion">Seleccioná una opción...</option>
+                        <option value="Neo">Neolítico</option>
+                        <option value="Metal">Edad de los Metales</option>
+                        <option value="EdadA">Edad Antigua</option>
+                        <option value="EdadM">Edad Media</option>
+                        <option value="EdadMo">Edad Moderna</option>
+                        <option value="Paleo">Paleolítico</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label-1>Selecciona el siglo en que comenzó el Renacimiento</label-1>
+                    <img src="img/renacimiento.jfif" alt="renacimiento" width="500px" height="300px">
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="1500">
+                            1500 (s.XVI)
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="1800">
+                            1800 (s.XIX)
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="1300">
+                            1300 (s.XIV)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label-1>¿Qué evento determinó un cambio significativo en la moda durante el siglo XX?</label-1>
+                    <img src="img/moda.avif" alt="moda" width="500px" height="300px">
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="1GM">
+                            La Primera Guerra Mundial
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Muro">
+                            La caída del Muro de Berlín
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Motor">
+                            La invención del motor a vapor
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Ninguno">
+                            Ninguno de los anteriores
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>El arte como expresión política</legend>
+
+                <div class="control-group">
+                    <label-1 for="curso">¿Qué movimiento artístico del siglo XX fue declarado oficialmente por el régimen soviético en 1934 como el único método válido para la creación artística en la URSS?</label-1>
+                    <img src="img/realismo_socialista.jpg" alt="realismo socialista" width="500px" height="300px">
+                    <select id="curso" name="curso" required>
+                        <option value="opcion">Seleccioná una opción...</option>
+                        <option value="Constructivismo">El Constructivismo Ruso</option>
+                        <option value="Realismo">El Realismo Socialista</option>
+                        <option value="Suprematismo">El Suprematismo</option>
+                        <option value="Futurismo">El Futurismo</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    
+                    <label-1>¿Cuál fue el propósito principal de la exposición "Arte Degenerado" (Entartete Kunst) organizada por el régimen nazi en Alemania en 1937?</label-1>
+                    <img src="img/expo_degenerados.avif" alt="exposición" width="500px" height="300px">
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="Vanguardias">
+                           Promover las vanguardias artísticas alemanas.
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="grecorromano">
+                          Celebrar el arte clásico grecorromano.
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="radio" name="siglo" value="ridiculizar">
+                           Exhibir y ridiculizar el arte moderno y de vanguardia para descalificarlo públicamente.
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="control-group">
+                    <label-1>¿Qué evento histórico específico de la Guerra Civil Española inspiró a Pablo Picasso a pintar el famoso mural Guernica (1937)?</label-1>
+                    <img src="img/guernica.jfif" alt="Guernica" width="500px" height="300px">>
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Madrid">
+                            La caída de Madrid ante las fuerzas de Francisco Franco.
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Condor">
+                            El bombardeo aéreo de la aviación legión cóndor sobre la población civil de una villa vasca.
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="Federico García Lorca">
+                            El fusilamiento del poeta Federico García Lorca.
+                        </label>
+                        <label class="opcion-inline">
+                            <input type="checkbox" name="evento" value="pacto">
+                            La firma del pacto de no agresión.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label-1 for="comentarios"> En tu opinión, ¿cuál es el espacio o formato artístico que logra mayor impacto en la política actualmente?</label-1>
+                    <img src="img/calle.jpg" alt="calle" width="500px" height="300px">>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribí tu opinión acá..."></textarea>
+                </div>
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Pregunta de cierre</legend>
+                <div class="control-group">
+                    <label for="comentarios-arte">Desarrolla brevemente un tema que te interese sobre el arte:</label>
+                    <img src="img/musica.jfif" alt="musica" width="500px" height="300px">>
+                    <textarea id="comentarios-arte" name="comentarios_arte" rows="6" placeholder="Escribí acá..." required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="control-group">
+                    <label for="comentarios">Comentarios que quieras hacer:</label>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribí tus comentarios acá..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-noborder">
+                <div class="control-group">
+                    <label class="opcion-inline">
+                        <input type="checkbox" name="terminos" required>
+                        <span>Al enviar este formulario acepto los <a href="#">términos y condiciones</a> *</span>
+                    </label>
+            </fieldset>
+
+            <div class="botones-container">
+                <button type="submit" class="btn-guardar">Guardar</button>
+                <button type="reset" class="btn-reset">Realizar otra vez</button>
+            </div>
+            
+        </form>
+    </div>
+    <footer>
+        <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
+    </footer>
+</body>
+</html>
